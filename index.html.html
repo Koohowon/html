@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      .main {
+        height: 1920px;
+        background-image: url("images/gabae.jpg");
+      }
+
+      .container {
+        max-width: 1080px;
+        height: 100%;
+        margin: auto;
+      }
+
+      .top {
+        margin-top: auto;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .center-cover-img {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      /* section,
+      div {
+        border: 1px solid red;
+      } */
+
+      .nav {
+        display: flex;
+        column-gap: 70px;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: auto;
+      }
+
+      .nav ul {
+        list-style-type: none;
+        display: flex;
+        column-gap: 30px;
+        font-size: 15px;
+        color: black;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-weight: 15px;
+        margin: auto;
+      }
+
+      .info {
+        margin-top: 100px;
+        /* width: 700px;
+        margin: auto; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .info-msg {
+        font-size: 30px;
+        font-weight: 20px;
+        align-items: center;
+      }
+
+      .button-group {
+        margin-top: auto;
+      }
+
+      .button-app {
+        background-color: rgba(100, 150, 200, 50%);
+        color: wheat;
+        width: 150px;
+        height: 40px;
+        border-style: none;
+        border-radius: 6px;
+      }
+
+      .button-app > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main center-cover-img">
+      <div class="container">
+        <div class="top">
+          <img class="logo" src="images/coffee.jpg" height="50px" alt="로고" />
+          <div class="nav">
+            <ul>
+              <li>대표</li>
+              <li>고객센터</li>
+              <li>가배의 뜻</li>
+              <li>원두 종류</li>
+            </ul>
+            <ul>
+              <li>구호원</li>
+              <li>010 7387 7262</li>
+              <li>조선시대의 커피를 가배라고 한다</li>
+              <li>산미 원두 다크한 원두</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="info">
+            <div class="info-msg">커피의 모든것</div>
+            <div class="info-msg">여기서 직접 경험하세요</div>
+            <div class="button-group">
+              <button class="button-app">
+                <div>
+                  <img src="images/app.webp" height="30px" />
+                  <span>앱 스토어</span>
+                </div>
+              </button>
+              <button class="button-app">
+                <div>
+                  <img src="images/goo.png" height="30px" />
+                  <span>구글 플레이</span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
